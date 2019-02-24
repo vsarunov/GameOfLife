@@ -42,6 +42,8 @@
         /// <returns>New generation of cells</returns>
         public IEnumerable<GridCell> GetNewGeneration(int x, int y, IEnumerable<GridCell> oldGeneration)
         {
+            //Fail fast
+            if (oldGeneration == null || !oldGeneration.Any()) return Enumerable.Empty<GridCell>();
 
             var stayingAliveCells = oldGeneration.Where(t =>
             {
