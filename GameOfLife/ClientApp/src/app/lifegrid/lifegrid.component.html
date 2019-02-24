@@ -1,3 +1,22 @@
-<p>
-  lifegrid works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <table>
+        <tr *ngFor="let rows of cells;let i = index">
+          <td *ngFor="let col of rows;let j=index">
+            <button class="tablebutton" id="{{i}}{{j}}" (click)="select($event,i,j)"></button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-12">
+      <label for="xaxys">X axis</label>
+      <input type="number" id="xaxys" name="xaxys" min="10" max="100" [(ngModel)]="xaxys">
+      <label for="yaxys">Y axis</label>
+      <input type="number" id="yaxys" name="yaxys" min="10" max="100" [(ngModel)]="yaxys">
+      <button (click)="updateGridSize()">Change grid size</button>
+      <button (click)="getNextGeneration()"> Get Next Generation</button>
+      <button (click)="getPreviousGeneration()"> Get Previous Generation</button>
+    </div>
+  </div>
+</div>

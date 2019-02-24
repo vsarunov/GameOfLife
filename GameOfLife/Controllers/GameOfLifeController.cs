@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-namespace GameOfLife.Controllers
+﻿namespace GameOfLife.Controllers
 {
+    using System;
+    using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
     using GameOfLifeCalculationLibrary;
@@ -18,7 +18,7 @@ namespace GameOfLife.Controllers
             _gameOfLifeCalculator = gameOfLifeCalculator;
         }
 
-        [HttpGet]
+        [HttpPut("{x}/{y}")]
         [ProducesResponseType(typeof(List<GridCell>), 200)]
         public IActionResult Get(int x, int y, [FromBody]List<GridCell> gridCells)
         {

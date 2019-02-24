@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameOfLife", "GameOfLife\GameOfLife.csproj", "{D5709B70-568F-4552-BC86-F8FAC09BB820}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfLifeCalculationLibrary", "GameOfLifeCalculationLibrary\GameOfLifeCalculationLibrary.csproj", "{49B9D327-C9F8-4F40-918B-4478E4C5731B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameOfLifeCalculationLibrary", "GameOfLifeCalculationLibrary\GameOfLifeCalculationLibrary.csproj", "{49B9D327-C9F8-4F40-918B-4478E4C5731B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfLifeCalculationLibraryTests", "GameOfLifeCalculationLibraryTests\GameOfLifeCalculationLibraryTests.csproj", "{F4E00EF4-7E4F-4688-8DA4-DA5FC09760A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{49B9D327-C9F8-4F40-918B-4478E4C5731B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49B9D327-C9F8-4F40-918B-4478E4C5731B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49B9D327-C9F8-4F40-918B-4478E4C5731B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4E00EF4-7E4F-4688-8DA4-DA5FC09760A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4E00EF4-7E4F-4688-8DA4-DA5FC09760A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4E00EF4-7E4F-4688-8DA4-DA5FC09760A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4E00EF4-7E4F-4688-8DA4-DA5FC09760A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

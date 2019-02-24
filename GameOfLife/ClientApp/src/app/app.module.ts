@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { LifegridComponent } from './lifegrid/lifegrid.component';
+
+import { CellService } from './services/cell.service';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,10 @@ import { LifegridComponent } from './lifegrid/lifegrid.component';
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
-    HttpClientModule,
+    HttpModule,
     FormsModule
   ],
-  providers: [],
+  providers: [CellService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
