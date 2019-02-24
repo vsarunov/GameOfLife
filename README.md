@@ -1,7 +1,7 @@
 # GameOfLife
 Conways game of life
 
-The solution is an SPA type .NET core solution.
+The solution is an SPA type .NET core solution with Angular fron end.
 
 To run: clean and build the solution, this should install npm packages. Otherwise cmd to ClientApp and run "npm install".
 If the application throws an exception when running the web app, try to restart sometimes angular timeout occurs when connecting.
@@ -36,3 +36,4 @@ Some things I would add or do differently:
 3. Would think about more abtsraction on calculation logic.
 4. Would make the calculation library a .NET standar solution, to be reusable across.
 5. Would add clear grid button.
+6. Would add automated mode.
