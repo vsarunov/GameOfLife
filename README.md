@@ -35,3 +35,4 @@ Some things I would add or do differently:
 2. Would add more security and security headers e.g csp, cors.
 3. Would think about more abtsraction on calculation logic.
 4. Would make the calculation library a .NET standar solution, to be reusable across.
+5. Would add clear grid button.
