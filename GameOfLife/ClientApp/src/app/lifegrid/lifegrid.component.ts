@@ -58,7 +58,6 @@ export class LifegridComponent implements OnInit, OnDestroy, AfterViewChecked {
     this.cellSubscription = this._cellService.getLiveCells(this.xaxys, this.yaxys, this.liveCells).subscribe((cells: GridCell[]) => {
       this.previousGeneration=this.liveCells;
       this.liveCells = cells;
-      console.log(cells);
       this.RefreshCells();
       this.updateLiveCellAfterGridSizeChange();
     });
@@ -69,9 +68,9 @@ export class LifegridComponent implements OnInit, OnDestroy, AfterViewChecked {
   private updateLiveCellAfterGridSizeChange(): void {
     for (var i: number = 0; i < this.xaxys; i++) {
       for (var j: number = 0; j < this.yaxys; j++) {
-        var result = this.liveCells.map(function (e) { return e.xAxysCoordinates + " " + e.yAxisCoordinates; }).indexOf(i + " " + j);
+        var result = this.liveCells.map(function (e) { return e.xAxysCoordinates + "x" + e.yAxisCoordinates; }).indexOf(i + "x" + j);
         if (result !== -1) {
-          document.getElementById(i + "" + j).style.backgroundColor = "#000000";
+          document.getElementById(i + "x" + j).style.backgroundColor = "#000000";
         }
       }
     }

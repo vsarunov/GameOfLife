@@ -4,7 +4,7 @@
       <table>
         <tr *ngFor="let rows of cells;let i = index">
           <td *ngFor="let col of rows;let j=index">
-            <button class="tablebutton" id="{{i}}{{j}}" (click)="select($event,i,j)"></button>
+            <button class="tablebutton" id="{{i}}x{{j}}" (click)="select($event,i,j)"></button>
           </td>
         </tr>
       </table>
