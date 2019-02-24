@@ -36,4 +36,4 @@ Some things I would add or do differently:
 3. Would think about more abtsraction on calculation logic.
 4. Would make the calculation library a .NET standar solution, to be reusable across.
 5. Would add clear grid button.
-6. Would add automated mode.
+6. Would add automated mode, which would require websockets/pulling instead of making an API call per new generation.
